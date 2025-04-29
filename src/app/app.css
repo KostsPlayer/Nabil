@@ -799,7 +799,7 @@ body {
   width: 0;
 }
 .body__lines span.default {
-  box-shadow: inset 0 0 0 0.02px #000;
+  box-shadow: inset 0 0 0 0.05px rgba(0, 0, 0, 0.5);
 }
 .body__lines span:nth-child(1) {
   left: 0%;
