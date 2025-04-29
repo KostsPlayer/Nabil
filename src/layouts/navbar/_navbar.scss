@@ -1,0 +1,40 @@
+@use "../../utils/helpers" as help;
+@use "../../utils/hover" as hover;
+
+.navbar {
+  padding: help.$py-initial 0;
+  @include help.flex($justify: space-between);
+
+  &__logo {
+    font-family: help.$chonburi;
+    font-size: 2.2rem;
+    padding: 0.425rem 0.675rem;
+    background-color: #000;
+    color: #fff;
+    line-height: 100%;
+  }
+
+  &__links {
+    @include help.flex();
+    gap: 2.4rem;
+
+    &__to {
+      text-decoration: none;
+      color: #000;
+
+      @include hover.line();
+
+      &.active {
+        color: help.$color-main;
+        @include hover.line($clr: help.$color-main);
+      }
+    }
+  }
+
+  &__search {
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
+      font-size: 1.6rem;
+    }
+  }
+}

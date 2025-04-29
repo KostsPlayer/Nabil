@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Editor",
+    "desc": "Bertanggung jawab untuk mengedit dan menyunting naskah, memastikan bahwa tulisan tersebut bebas dari kesalahan tata bahasa, ejaan, dan tanda baca. Editor juga membantu penulis dalam memperbaiki struktur kalimat dan alur cerita."
+  },
+  {
+    "id": 2,
+    "name": "Layouter",
+    "desc": "Bertanggung jawab untuk merancang tata letak buku, termasuk penempatan teks, gambar, dan elemen desain lainnya. Layouter memastikan bahwa buku terlihat menarik dan mudah dibaca."
+  },
+  {
+    "id": 3,
+    "name": "Penyelaras",
+    "desc": "Bertanggung jawab untuk menyelaraskan semua elemen dalam buku, termasuk teks, gambar, dan desain. Penyelaras memastikan bahwa semua elemen bekerja sama untuk menciptakan pengalaman membaca yang harmonis."
+  },
+  {
+    "id": 4,
+    "name": "Kontributor",
+    "desc": "Bertanggung jawab untuk menyumbangkan tulisan, gambar, atau elemen lain yang akan dimasukkan ke dalam buku. Kontributor dapat berupa penulis, fotografer, atau seniman lainnya."
+  }
+]

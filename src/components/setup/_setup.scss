@@ -1,0 +1,72 @@
+@use "../../utils/helpers" as help;
+
+.setup__display {
+  position: fixed;
+  bottom: 3rem;
+  right: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 28px;
+  align-items: center;
+  width: 7rem;
+  gap: 0.7rem;
+
+  .text {
+    font-size: 0.92rem;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    transform: translateY(5rem);
+    transition: transform 0.4s ease-in-out;
+    margin-left: auto;
+
+    &.active {
+      transform: translateY(0);
+      transition: transform 0.4s ease-in-out;
+    }
+  }
+
+  .icon {
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+
+    &:hover,
+    &:focus {
+      transform: rotate(90deg);
+      transition: transform 0.4s ease-in-out;
+    }
+  }
+}
+
+.setup__content {
+  position: fixed;
+  bottom: 6.4rem;
+  right: 1.5rem;
+  display: grid;
+  gap: 0.95rem;
+  transform: translateX(9rem);
+  transition: transform 0.4s ease-in-out;
+
+  &.active {
+    transform: translateX(0);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 28px;
+    width: 7rem;
+    gap: 0.7rem;
+    cursor: pointer;
+
+    .text {
+      cursor: pointer;
+      font-size: 0.7rem;
+      letter-spacing: 0.2px;
+      font-weight: 400;
+      margin: auto 0 auto auto;
+    }
+
+    .icon {
+      margin: 0 auto;
+    }
+  }
+}

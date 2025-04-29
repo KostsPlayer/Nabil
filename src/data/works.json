@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "Rona Merah Antologi Cerpen Genre Romansa",
+    "type": "Editor",
+    "desc": "Kumpulan cerpen yang mengisahkan tentang cinta dan hubungan antar manusia. Setiap cerita memiliki nuansa merah yang melambangkan cinta dan emosi yang mendalam.",
+    "mainImage": "pexels-ira-kamish-12266030.jpg",
+    "gallery": [
+      "pexels-ira-kamish-12266030.jpg",
+      "pexels-dadgrass-10018513.jpg",
+      "pexels-ena-marinkovic-1814213-3698598.jpg",
+      "pexels-rdne-7979100.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Anomali Antologi Cerpen Genre Horor",
+    "type": "Editor",
+    "desc": "Kumpulan cerpen yang mengisahkan tentang pengalaman horor dan misteri. Setiap cerita membawa pembaca ke dalam dunia yang gelap dan menakutkan.",
+    "mainImage": "pexels-dadgrass-10018513.jpg",
+    "gallery": [
+      "pexels-ira-kamish-12266030.jpg",
+      "pexels-dadgrass-10018513.jpg",
+      "pexels-ena-marinkovic-1814213-3698598.jpg",
+      "pexels-rdne-7979100.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Benang Merah Antologi Cerpen Genre Misteri",
+    "type": "Layouter",
+    "desc": "Kumpulan cerpen yang mengisahkan tentang teka-teki dan misteri yang harus dipecahkan. Setiap cerita membawa pembaca ke dalam dunia yang penuh intrik dan kejutan.",
+    "mainImage": "pexels-ena-marinkovic-1814213-3698598.jpg",
+    "gallery": [
+      "pexels-ira-kamish-12266030.jpg",
+      "pexels-dadgrass-10018513.jpg",
+      "pexels-ena-marinkovic-1814213-3698598.jpg",
+      "pexels-rdne-7979100.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Kusembahkan Dunia Antologi Cerpen Genre Drama",
+    "type": "Penyelaras",
+    "desc": "Kumpulan cerpen yang mengisahkan tentang kehidupan sehari-hari dan konflik emosional. Setiap cerita menggambarkan perjalanan hidup yang penuh makna.",
+    "mainImage": "pexels-rdne-7979100.jpg",
+    "gallery": [
+      "pexels-ira-kamish-12266030.jpg",
+      "pexels-dadgrass-10018513.jpg",
+      "pexels-ena-marinkovic-1814213-3698598.jpg",
+      "pexels-rdne-7979100.jpg"
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+$roboto: "Roboto", sans-serif;
+$playfair: "Playfair Display", serif;
+$chonburi: "Chonburi", serif;
+
+$px-main: 10rem;
+$py-initial: 3.6rem;
+
+$color-main: oklch(0.421 0.095 57.708);
+$color-main-hover: oklch(0.421 0.095 57.708 / 0.8);
+$color-gray: rgba(
+  $color:
+    darken(
+      $color: #fff,
+      $amount: 30%,
+    ),
+  $alpha: 0.1,
+);
+$color-gray-darkmode: rgba(
+  $color:
+    darken(
+      $color: #000,
+      $amount: 10%,
+    ),
+  $alpha: 0.8,
+);
+
+@mixin flex(
+  $direction: row,
+  $justify: center,
+  $align: center,
+  $start: false,
+  $end: false
+) {
+  display: flex;
+  flex-direction: $direction;
+
+  @if $start {
+    justify-content: flex-start;
+    align-items: flex-start;
+  } @else if $end {
+    justify-content: flex-end;
+    align-items: flex-end;
+  } @else {
+    align-items: $align;
+    justify-content: $justify;
+  }
+}

@@ -1,0 +1,109 @@
+@use "../components/typeWriter/typewriter";
+@use "../components/setup/setup";
+@use "../layouts/navbar/navbar";
+@use "../layouts/footer/footer";
+@use "../pages/work/work";
+@use "../pages/about/about";
+@use "../pages/contact/contact";
+@use "../pages/detail/detail";
+@use "../utils/helpers" as help;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: help.$roboto;
+  font-weight: 300;
+  position: relative;
+}
+
+.darkmode__bg {
+  background-color: #000;
+}
+
+.darkmode__text {
+  color: #fff;
+}
+
+.lightmode__bg {
+  background-color: #fff;
+}
+
+.lightmode__text {
+  color: #000;
+}
+
+.layout {
+  padding: 0 help.$px-main;
+}
+
+.body__lines {
+  position: absolute;
+  top: 0;
+  left: help.$px-main;
+  right: help.$px-main;
+  bottom: 0;
+  z-index: 99;
+  pointer-events: none;
+
+  span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0.8px;
+    box-shadow: inset 0 0 0 0.1px #fff;
+
+    &.hidden {
+      width: 0;
+    }
+
+    &.default {
+      box-shadow: inset 0 0 0 0.02px #000;
+    }
+
+    &:nth-child(1) {
+      left: 0%;
+    }
+    &:nth-child(2) {
+      left: 25%;
+    }
+    &:nth-child(3) {
+      left: 50%;
+    }
+    &:nth-child(4) {
+      left: 75%;
+    }
+    &:nth-child(5) {
+      left: 100%;
+    }
+  }
+}
+
+.credit {
+  @include help.flex();
+  font-weight: 400;
+  font-size: 0.85rem;
+  background-color: help.$color-gray-darkmode;
+  // background-color: red;
+  padding: (help.$py-initial * 1.8) 0 help.$py-initial;
+
+  &.default {
+    background-color: help.$color-gray;
+  }
+
+  span {
+    margin-right: 0.25rem;
+    color: #fff;
+
+    &.default {
+      color: help.$color-main;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@use "../../utils/helpers" as help;
+@use "../../components/header/header" as header;
+
+.detail {
+  width: 100%;
+  height: 100%;
+
+  @include header.header($detail: true);
+
+  &__main__image {
+    width: 100%;
+    height: 42rem;
+    margin-bottom: 5.1rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    figure {
+      height: 13.5rem;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}

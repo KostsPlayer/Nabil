@@ -1,0 +1,98 @@
+@use "../../utils/helpers" as help;
+
+@mixin config($p: 0 0.75rem, $h: 3.3rem) {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: help.$color-gray;
+  height: $h;
+  font-size: 1rem;
+  padding: $p;
+  color: rgba($color: #000, $alpha: 0.8);
+  letter-spacing: 0.4px;
+  font-family: help.$playfair;
+
+  &.darkmode {
+    background-color: help.$color-gray-darkmode;
+    color: #fff;
+
+    &:focus {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+
+  &:focus {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+@mixin form($w: 100%, $m: 0) {
+  .main__form {
+    display: grid;
+    gap: 1.7rem;
+    width: $w;
+    margin: $m;
+
+    &__group {
+      @include help.flex($direction: column, $start: true);
+      gap: 0.6rem;
+
+      label {
+        font-size: 0.88rem;
+        
+        span {
+          color: help.$color-main;
+          font-size: 0.92rem;
+          font-weight: 400;
+
+          &.darkmode {
+            color: #fff;
+          }
+        }
+      }
+
+      input {
+        @include config();
+      }
+
+      textarea {
+        @include config($p: 0.75rem, $h: 13.2rem);
+        resize: none;
+      }
+    }
+
+    &__submit {
+      button {
+        margin-top: 0.3rem;
+        border: none;
+        outline: none;
+        background-color: #000;
+        color: #fff;
+        padding: 1.2rem 1.45rem;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: all 0.4s ease;
+
+        &.darkmode {
+          background-color: #fff;
+          color: #000;
+        }
+
+        &:hover {
+          background-color: help.$color-main;
+          color: #fff;
+          transition: all 0.4s ease;
+        }
+      }
+
+      span {
+        font-size: 0.98rem;
+        margin-left: 0.9rem;
+      }
+    }
+  }
+}
